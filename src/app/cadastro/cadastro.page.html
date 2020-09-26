@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>CADASTRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	 <form (ngSubmit)="submitForm()">
+      <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input type="e-mail" [(ngModel)]="todo.title" name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Telefone</ion-label>
+        <ion-input type="telefone" [(ngModel)]="todo.title" name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="senha" [(ngModel)]="todo.title" name="title"></ion-input>
+      </ion-item>
+        <ion-button type="submit" expand= "block">Cadastrar</ion-button>
+    </form>
+
+</ion-content>
