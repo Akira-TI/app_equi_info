@@ -16,17 +16,18 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'equipamentos',
+    loadChildren: () => import('./equipamentos/equipamentos.module').then( m => m.EquipamentosPageModule)
+  },
+  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
   {
     path: 'sobre',
     loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
-  },
-  {
-    path: 'equipamentos',
-    loadChildren: () => import('./equipamentos/equipamentos.module').then( m => m.EquipamentosPageModule)
   }
+  
 ];
 
 @NgModule({

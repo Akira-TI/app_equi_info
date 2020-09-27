@@ -8,16 +8,14 @@
 </ion-header>
 
 <ion-content>
-	<ion-card *ngFor="let n of equipamentos">
+	<ion-card id="card-equip" color="light" *ngFor="let n of equipamentos">
         <img src="{{n.img}}" />
         <ion-card-header>
-          <ion-card-subtitle>{{n.subtitle}}</ion-card-subtitle>
-          <ion-card-title>{{n.title}}</ion-card-title>
+        <!--<ion-card-subtitle>{{n.subtitle}}</ion-card-subtitle>-->
+          <ion-card-title id="ion-card-title">{{n.title}}</ion-card-title>
         </ion-card-header>
-        <ion-card-content
-         {{n.description}}>
-    </ion-card>
-</ion-card-content>
-          
-
+    <ion-card-content>
+         {{n.description}}
+    </ion-card-content>
+  </ion-card>           
 </ion-content>

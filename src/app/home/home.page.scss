@@ -1,13 +1,25 @@
+ion-title {
+	   font-family: dubai;
+	   font-size: 20px;
+       color: #3dc2ff;
+}
+
+#card-home {
+	   margin: auto;
+	   color: red;
+}
+
 h1 {
-    font-size-adjust: 0.19;
+    font-family: dubai;
+    font-size-adjust: 0.19, strong;
     text-align: center;
 	color: #4c8dff;
 
 }
 
 p {
-	font-size: 10px;
-	font-weight: bold;
+    font-family: dubai;
+	font-size: 15px;
 	text-align: center;
-	color: red;
+	color: #cf3c4f;
 }
